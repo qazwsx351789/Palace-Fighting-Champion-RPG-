@@ -142,7 +142,7 @@ namespace WindowsFormsApp3
             if (IsToForm1) //判斷是否要回到Form1
             {
                 this.DialogResult = DialogResult.Yes; //利用DialogResult傳遞訊息
-                Form1 form1 = (Form1)this.Owner; //取得父視窗的參考
+                Core_Form form1 = (Core_Form)this.Owner; //取得父視窗的參考
                 form1.VS1(vs1);
             }
             else
