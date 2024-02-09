@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp3
+namespace WindowsFormsApps3
 {
-    public partial class Form1 : Form
+    public partial class Core_Form : Form
     {
         int loveNum = 10;
         int kaNum = 0;
@@ -19,7 +19,7 @@ namespace WindowsFormsApp3
         private string name;
         string check ,check1;
 
-        public Form1()
+        public Core_Form()
         {
             InitializeComponent();
             pictureBox1.Image = imageList1.Images[0];

@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp3
+﻿namespace WindowsFormsApps3
 {
-    partial class Form1
+    partial class Core_Form
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Core_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -187,7 +187,7 @@
             // 
             this.button5.Font = new System.Drawing.Font("新細明體", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button5.ForeColor = System.Drawing.Color.Cyan;
-            this.button5.Image = global::WindowsFormsApp3.Properties.Resources.鮮豔服裝;
+            this.button5.Image = global::WindowsFormsApps3.Properties.Resources.鮮豔服裝;
             this.button5.Location = new System.Drawing.Point(449, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(275, 415);
@@ -201,7 +201,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("新細明體", 15F);
             this.button4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.button4.Image = global::WindowsFormsApp3.Properties.Resources.淡雅服裝;
+            this.button4.Image = global::WindowsFormsApps3.Properties.Resources.淡雅服裝;
             this.button4.Location = new System.Drawing.Point(60, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(293, 415);
@@ -315,7 +315,7 @@
             this.hint.Text = "點擊對話框以繼續遊戲";
             this.hint.Visible = false;
             // 
-            // Form1
+            // Core_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -337,8 +337,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Core_Form";
+            this.Text = "Palace Fighting Champion";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
