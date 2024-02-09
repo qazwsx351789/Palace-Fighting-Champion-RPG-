@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1800
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalaceFightingChampion", "PalaceFightingChampion\PalaceFightingChampion.csproj", "{C6239E9E-EAF6-446F-9C13-83A2EDDB5CC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalaceFightingChampion", "WindowsFormsApp3\PalaceFightingChampion.csproj", "{C6239E9E-EAF6-446F-9C13-83A2EDDB5CC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
