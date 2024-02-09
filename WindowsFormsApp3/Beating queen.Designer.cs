@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3
+﻿namespace PalaceFightingChampion
 {
     partial class Form4
     {
