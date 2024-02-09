@@ -1,4 +1,4 @@
-﻿namespace PalaceFightingChampion
+﻿namespace WindowsFormsApps3
 {
     partial class Form3
     {
@@ -148,7 +148,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PalaceFightingChampion.Properties.Resources.皇上;
+            this.pictureBox1.Image = global::WindowsFormsApps3.Properties.Resources.皇上;
             this.pictureBox1.Location = new System.Drawing.Point(49, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(257, 250);

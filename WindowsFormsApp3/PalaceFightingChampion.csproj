@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C6239E9E-EAF6-446F-9C13-83A2EDDB5CC1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PalaceFightingChampion</RootNamespace>
-    <AssemblyName>PalaceFightingChampion</AssemblyName>
+    <RootNamespace>WindowsFormsApps3</RootNamespace>
+    <AssemblyName>WindowsFormsApps3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
