@@ -37,7 +37,7 @@ namespace WindowsFormsApps3
             ini = ini + skill1;
             label3.Visible = true;
             
-            label3.Text = "You used Flattery, increasing health by" + skill1;
+            label3.Text = "You used Flattery, increasing health by " + skill1;
             label2.Text = ini.ToString();
             start();
             button1.Enabled = false;
@@ -133,7 +133,7 @@ namespace WindowsFormsApps3
                 label3.Visible = true;
                 if (i==3)
                 {
-                    label3.Text = "The Empress uses" + queen[i]+ "，You safely passed this round.";
+                    label3.Text = "The Empress uses" + queen[i]+ ", You safely passed this round.";
                 }
                 else if (i == 2)
                 {
@@ -142,7 +142,7 @@ namespace WindowsFormsApps3
                 }
                 else if(i == 1)
                 {
-                    label3.Text = "The Empress uses" + queen[i] + ", you get" + queenAttack + "dameges";
+                    label3.Text = "The Empress uses" + queen[i] + ", you get " + queenAttack + " dameges";
                     ini = ini - queenAttack;
                     label2.Text = ini.ToString();
                     if(ini<=0)

@@ -562,7 +562,7 @@ namespace WindowsFormsApps3
             else if (counter6 == -18)
             {
                 label1.Visible = true;
-                label1.Text = "Choose which concubine's quarters you would like to visit for a chat.";
+                label1.Text = "Choose which concubine's quarters you would like to visit.";
                 timer6.Enabled = false;
                 ka.Visible = true;
                 ton.Visible = true;
@@ -605,7 +605,7 @@ namespace WindowsFormsApps3
             else if (counter4 == -18)
             {
                 label1.Visible = true;
-                label1.Text = "Choose which concubine's quarters you would like to visit for a chat.";
+                label1.Text = "Choose which concubine's quarters you would like to visit.";
                 timer4.Enabled = false;
                 ka.Visible = true;
                 ton.Visible = true;
