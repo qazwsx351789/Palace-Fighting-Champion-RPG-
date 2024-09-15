@@ -27,7 +27,7 @@ namespace WindowsFormsApps3
             textBox2.Visible = false;
             pictureBox2.Visible = false;
             love.Visible = false;
-            love.Text = "好感度 : " + loveNum;
+            love.Text = "Favorability: " + loveNum;
             Reset();
             button4.Visible = false;
             button5.Visible = false;
@@ -46,7 +46,7 @@ namespace WindowsFormsApps3
                 name = textBox1.Text;
                 if (name == "")
                 {
-                    MessageBox.Show("請先輸入名字！", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Please ensure that your name is not left blank.！", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
                 else
@@ -108,8 +108,8 @@ namespace WindowsFormsApps3
             }
             if(N == 2)
             {
-                textBox2.Text = "嬤嬤 : " + name + "小主萬安，我是您的教養嬤嬤，今天是您進宮的第一天。\r\n"
-                + "這個存菊堂以後就是您的住處了，有甚麼問題就問小亮子吧。";
+                textBox2.Text = "Nanny : " + name + "Greetings, Young Master I am your instructing nanny. Today is your first day in the palace. \r\n"
+                + "This is the Storage Chrysanthemum Hall, which will be your residence from now on. If you have any questions, please ask Xiao Liangzi.";
                 N++;
             }
 
@@ -120,13 +120,13 @@ namespace WindowsFormsApps3
                 hint.Visible = false;
                 button2.Visible = true;
                 button3.Visible = true;
-                button2.Text = "打賞嬤嬤，讓小亮子送他回去。";
-                button3.Text = "點頭示意，自己默默走進去。";
+                button2.Text = "Give a reward to the nanny, and have Xiao Liangzi escort her back.";
+                button3.Text = "Nodding in acknowledgment, he quietly walked inside.";
                 N++;
             }
             if (N == 6)
             {
-                textBox2.Text = "旁白: 皇上召你侍寢，你想怎麼打扮 ?";
+                textBox2.Text = "Narrator: The Emperor has summoned you to his chamber. How would you like to dress?";
                 N++;
             }
             if (N == 8)
@@ -153,7 +153,7 @@ namespace WindowsFormsApps3
                     default:
                         break;
                 }
-                textBox2.Text = "你平安度過了第一夜";
+                textBox2.Text = "You have safely passed your first night.";
                 B5--;
             }
             if (B4 == 1)
@@ -172,7 +172,7 @@ namespace WindowsFormsApps3
                     default:
                         break;
                 }
-                textBox2.Text = "你平安度過了第一夜";
+                textBox2.Text = "You have safely passed your first night.";
                 B4--;
             }
             if (N == 10)
@@ -185,19 +185,19 @@ namespace WindowsFormsApps3
             }
             if(N==12)
             {
-                textBox2.Text = "旁白:侍寢後的第一天早晨，你依規定來向皇后請安。";
+                textBox2.Text = "Narrator: On the morning after spending the night in the Emperor's chamber, you are to formally pay your respects to the Empress as per the rules.";
                 pictureBox2.Visible = true;
                 pictureBox2.Image = imageList1.Images[13];
                 N++;
             }
             if(N==14)
             {
-                textBox2.Text = name + ": 皇后娘娘萬福金安。";
+                textBox2.Text = name + ": Greetings, Empress. Wishing you longevity and peace.";
                 N++;
             }
             if(N==16)
             {
-                textBox2.Text = "旁白: 皇后想跟你一較高下";
+                textBox2.Text = "The Empress wishes to test her skills against you.";
                 N++;
             }
             if(N==18)
@@ -211,14 +211,14 @@ namespace WindowsFormsApps3
                         this.Show(); //顯示父視窗
                         if(check == "YES")
                         {
-                            textBox2.Text = "皇后覺得你很強，不敢弄你。";
+                            textBox2.Text = "The Empress finds you formidable and is hesitant to challenge you.";
                             loveNum = loveNum + 20;
-                            love.Text = "好感度 : " + loveNum;
+                            love.Text = "Favorability: " + loveNum;
 
                         }
                         else if(check == "NO")
                         {
-                            textBox2.Text = "皇后覺得你很好欺負，派人陷害你進冷宮";
+                            textBox2.Text = "The Empress perceives you as easily bullied and has dispatched someone to frame you and send you to the Cold Palace.";
                             fail++;
                         }
                         break;
@@ -262,18 +262,18 @@ namespace WindowsFormsApps3
                         this.Show(); //顯示父視窗
                         if (check1 == "YES")
                         {
-                            textBox2.Text = "咖妃覺得你沒有讓她，生氣把你趕走。";
+                            textBox2.Text = "Concubine Ka is upset that you did not yield to her and has ordered you to leave.";
                             loveNum = loveNum - 10;
-                            love.Text = "好感度 : " + loveNum;
+                            love.Text = "Favorability: " + loveNum;
                             kaNum = kaNum - 2;
 
 
                         }
                         else if (check1 == "NO")
                         {
-                            textBox2.Text = "咖妃邀請你加入他的陣營";
+                            textBox2.Text = "Concubine Ka invites you to join her faction.";
                             loveNum = loveNum + 20;
-                            love.Text = "好感度 : " + loveNum;
+                            love.Text = "Favorability: " + loveNum;
                             kaNum = kaNum - 2;
                         }
                         
@@ -290,7 +290,7 @@ namespace WindowsFormsApps3
 
             if(kaNum == 1)
             {
-                textBox2.Text = "咖妃:妹妹來啦，快坐下!陪姊姊玩猜數字吧。";
+                textBox2.Text = "Concubine Ka: Sister, come here! Sit down quickly and join me in a game of guessing numbers.";
                 kaNum++;
                 N = 21;
             }
@@ -303,8 +303,8 @@ namespace WindowsFormsApps3
                 textBox2.Visible = false;
                 button2.Visible = true;
                 button3.Visible = true;
-                button2.Text = name + " : 多謝娘娘提醒，嬪妾以後都聽從您的話。";
-                button3.Text = name + " : 多謝娘娘提醒，嬪妾會看著辦的。";
+                button2.Text = name + ": Thank you for the reminder, Your Highness. I will follow your guidance from now on.";
+                button3.Text = name + ": Thank you for the reminder, Your Highness. I will take care of it.";
                 tonNum = 0;
 
                 N = 22;
@@ -312,7 +312,7 @@ namespace WindowsFormsApps3
 
             if (tonNum == 4)
             {
-                textBox2.Text = "躺嬪:(小聲)妹妹可有聽說咖妃娘娘勾結朝政之事?妹妹要謹慎選邊站阿。";
+                textBox2.Text = "Tom Concubine: (whispering)Sister, have you heard about Concubine Ka's involvement in political intrigues? You should be cautious about which side you choose.";
                 pictureBox2.Image = imageList1.Images[19];
                 tonNum++;
             }
@@ -325,8 +325,8 @@ namespace WindowsFormsApps3
                 textBox2.Visible = false;
                 button2.Visible = true;
                 button3.Visible = true;
-                button2.Text = name + " : 當然可以，皇上還是很喜歡姐姐的。";
-                button3.Text = name + " : 皇上不來見姐姐肯定有他的道理，姊姊再等等吧。";
+                button2.Text = name + " : Of course, the Emperor still likes you very much, Sister.";
+                button3.Text = name + " : There must be a reason why the Emperor hasn’t come to see you, Sister. Please be patient and wait a little longer.";
                 
             }
 
@@ -338,13 +338,13 @@ namespace WindowsFormsApps3
                 textBox2.Visible = false;
                 button2.Visible = true;
                 button3.Visible = true;
-                button2.Text = name + " : 托姊姊的福，一切都好。";
-                button3.Text = name + " : 皇上對我很好~送我好多東西呢!";
+                button2.Text = name + ": Thanks to your blessings, everything is going well.";
+                button3.Text = name + ": The Emperor is very kind to me~ He has given me so many gifts!";
                 
             }
             if(tonNum == 1)
             {
-                textBox2.Text = "躺嬪: 妹妹早阿，宮裡的生活都還習慣嗎 ?";
+                textBox2.Text = "Tom Concubine: Good morning, Sister. Are you adjusting well to life in the palace?";
                 tonNum++;
             }
 
@@ -391,7 +391,7 @@ namespace WindowsFormsApps3
         }
         private void FAIL()
         {
-            label1.Text = "旋風宮鬥冠軍";
+            label1.Text = "Palace Fighting Champion";
             label1.Visible = false;
             textBox2.Text = "";
             pictureBox1.Image = imageList1.Images[14];
@@ -434,8 +434,8 @@ namespace WindowsFormsApps3
                 loveNum = loveNum + 10;
                 button2.Visible = false;
                 button3.Visible = false;
-                love.Text = "好感度 : " + loveNum;
-                textBox2.Text = "躺嬪:皇上已經很久沒有來看我了...你願意在皇上跟前幫我說兩句話嗎?";
+                love.Text = "Favorability: " + loveNum;
+                textBox2.Text = "Tom Concubine: The Emperor hasn't visited me for a long time... Would you be willing to speak on my behalf when you're in his presence?";
                 T++;
                 tonNum++;
             }
@@ -446,8 +446,8 @@ namespace WindowsFormsApps3
                 loveNum = loveNum + 10;
                 button2.Visible = false;
                 button3.Visible = false;
-                love.Text = "好感度 : " + loveNum;
-                textBox2.Text = "小亮子:" + name + "小主，皇上約了您用晚膳，該出發了。";
+                love.Text = "Favorability: " + loveNum;
+                textBox2.Text = "Xiao Liangzi:" + name + ", the Emperor has requested your presence for dinner. It’s time to head out.";
                 pictureBox2.Image = imageList1.Images[20];
                 T++;
                 tonNum++;
@@ -459,7 +459,7 @@ namespace WindowsFormsApps3
 
                 button2.Visible = false;
                 button3.Visible = false;
-                love.Text = "好感度 : " + loveNum;
+                love.Text = "Favorability: " + loveNum;
                 pictureBox2.Visible = false;
                 if (loveNum <= 0)
                 {
@@ -480,7 +480,7 @@ namespace WindowsFormsApps3
                 button2.Visible = false;
                 button3.Visible = false;
                 pictureBox2.Visible = false;
-                love.Text = "好感度 : " + loveNum;
+                love.Text = "Favorability: " + loveNum;
                 timer2.Enabled = true;
                 T++;
             }
@@ -498,7 +498,7 @@ namespace WindowsFormsApps3
             {
                 
                 label1.Visible = true;
-                label1.Text = "第一夜";
+                label1.Text = "First night";
                 counter2 = counter2 - 6;
             }
             else if(counter2<-6&&counter2>-10)
@@ -517,12 +517,12 @@ namespace WindowsFormsApps3
         private void button4_Click(object sender, EventArgs e)
         {
             loveNum = loveNum + 10;
-            love.Text = "好感度 : " + loveNum;
+            love.Text = "Favorability: " + loveNum;
             button4.Visible = false;
             button5.Visible = false;
             textBox2.Visible = true;
             hint.Visible = true;
-            textBox2.Text = "旁白:皇上看你穿著淡雅，冰雪聰明，考你個謎題";
+            textBox2.Text = "Narrator: The Emperor, seeing your elegant attire and keen intellect, has decided to challenge you with a riddle.";
             B4++;
 
         }
@@ -530,12 +530,12 @@ namespace WindowsFormsApps3
         private void button5_Click(object sender, EventArgs e)
         {
             loveNum = loveNum - 10;
-            love.Text = "好感度 : " + loveNum;
+            love.Text = "Favorability: " + loveNum;
             hint.Visible = true;
             button4.Visible = false;
             button5.Visible = false;
             textBox2.Visible = true;
-            textBox2.Text = "旁白:皇上不喜歡鮮豔的穿著，罰你寫五題數學題再回去。";
+            textBox2.Text = "Narrator: The Emperor dislikes flamboyant attire and has punished you by requiring you to solve five math problems before you can return.";
             B5++;
 
         }
@@ -562,7 +562,7 @@ namespace WindowsFormsApps3
             else if (counter6 == -18)
             {
                 label1.Visible = true;
-                label1.Text = "選擇去哪個嬪妃的宮裡聊天";
+                label1.Text = "Choose which concubine's quarters you would like to visit for a chat.";
                 timer6.Enabled = false;
                 ka.Visible = true;
                 ton.Visible = true;
@@ -579,7 +579,7 @@ namespace WindowsFormsApps3
                 if(t+k==2)
                 {
                     button1.Visible = true;
-                    button1.Text = "結算";
+                    button1.Text = "Settlement";
                     final = 1;
                 }
             }
@@ -605,7 +605,7 @@ namespace WindowsFormsApps3
             else if (counter4 == -18)
             {
                 label1.Visible = true;
-                label1.Text = "選擇去哪個嬪妃的宮裡聊天";
+                label1.Text = "Choose which concubine's quarters you would like to visit for a chat.";
                 timer4.Enabled = false;
                 ka.Visible = true;
                 ton.Visible = true;
@@ -627,41 +627,41 @@ namespace WindowsFormsApps3
         {
             string x = "";
             counter7++;
-            label3.Text = "你獲得的好感度是:" + loveNum;
+            label3.Text = "The affection you have earned is:" + loveNum;
             
             if(counter7 == 2)
             {
                 if (loveNum<=9)
                 {
-                    x = "打入冷宮";
+                    x = "Sent to the Cold Palace";
                     pictureBox1.Image = imageList1.Images[14];
                     
                 }
                 else if(loveNum>9&&loveNum<20)
                 {
-                    x = "常在";
+                    x = "First Class Female Attendant";
                 }
                 else if(loveNum > 19 && loveNum < 40)
                 {
-                    x = "貴人";
+                    x = "Noble Ladies";
                 }
                 else if (loveNum > 39 && loveNum < 60)
                 {
-                    x = "嬪";
+                    x = "Imperial Concubines";
                 }
                 else if (loveNum > 59 && loveNum < 80)
                 {
-                    x = "妃";
+                    x = "Consorts";
                 }
                 else if (loveNum > 79 && loveNum < 90)
                 {
-                    x = "貴妃";
+                    x = " Noble Consorts";
                 }
                 else if (loveNum > 89)
                 {
-                    x = "皇后";
+                    x = "Imperial Noble Consort";
                 }
-                label3.Text = "你獲得的好感度是:" + loveNum + "\r\n" + "你最後的位份是:" + x;
+                label3.Text = "The affection you have earned is:" + loveNum + "\r\n" + "Your final position is:" + x;
                 restart.Visible = true;
                 finalT.Enabled = false;
             }
@@ -732,7 +732,7 @@ namespace WindowsFormsApps3
             hint.Visible = false;
             pictureBox2.Visible = false;
             love.Visible = false;
-            love.Text = "好感度 : " + loveNum;
+            love.Text = "Favorability   : " + loveNum;
             restart.Visible = false;
             button4.Visible = false;
             button5.Visible = false;
@@ -754,7 +754,7 @@ namespace WindowsFormsApps3
             t = 0;
             final = 0;
             label3.Visible = false;
-            label1.Text = "旋風宮鬥冠軍";
+            label1.Text = "Palace Fighting Champion";
             button1.Text = "start!";
             ka.Enabled = true;
             ton.Enabled = true;
@@ -776,7 +776,7 @@ namespace WindowsFormsApps3
             {
 
                 label1.Visible = true;
-                label1.Text = "面見皇后";
+                label1.Text = "Audience with the Empress";
                 counter3= counter3 - 13;
             }
             else if (counter3 < -9 && counter3 > -13)
@@ -800,11 +800,11 @@ namespace WindowsFormsApps3
                 
                 textBox2.Visible = true;
                 hint.Visible = true;
-                textBox2.Text = "躺嬪:皇上已經很久沒有來看我了...你願意在皇上跟前幫我說兩句話嗎?";
+                textBox2.Text = "Tom Concubine: The Emperor hasn’t visited me for a long time... Would you be willing to speak on my behalf when you are in his presence?";
                 loveNum = loveNum - 10;
                 button2.Visible = false;
                 button3.Visible = false;
-                love.Text = "好感度 : " + loveNum;
+                love.Text = "Favorability: " + loveNum;
                 tonNum++;
                 T++;
                 if (loveNum <= 0)
@@ -827,8 +827,8 @@ namespace WindowsFormsApps3
                     
                     button2.Visible = false;
                     button3.Visible = false;
-                    love.Text = "好感度 : " + loveNum;
-                    textBox2.Text = "小亮子:[名字]小主，皇上約了您用晚膳，該出發了。";
+                    love.Text = "Favorability: " + loveNum;
+                    textBox2.Text = "Xiao Liangzi:" + name + ", the Emperor has requested your presence for dinner. It’s time to head out.";
                     pictureBox2.Image = imageList1.Images[20];
                     tonNum++;
                     T++;
@@ -839,7 +839,7 @@ namespace WindowsFormsApps3
                 loveNum = loveNum + 10;
                 button2.Visible = false;
                 button3.Visible = false;
-                love.Text = "好感度 : " + loveNum;
+                love.Text = "Favorability: " + loveNum;
                 pictureBox2.Visible = false;
                 timer6.Enabled = true;
             }
@@ -849,7 +849,7 @@ namespace WindowsFormsApps3
                 button3.Visible = false;
                 pictureBox2.Visible = false;
                 loveNum = loveNum + 5;
-                love.Text = "好感度 : " + loveNum;
+                love.Text = "Favorability: " + loveNum;
                 timer2.Enabled = true;
                 T++;
             }

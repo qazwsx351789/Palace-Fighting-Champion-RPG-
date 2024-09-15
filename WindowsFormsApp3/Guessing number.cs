@@ -28,7 +28,7 @@ namespace WindowsFormsApps3
             }
             else if (i % 2 == 0)
             {
-                button1.Text = "猜測";
+                button1.Text = "Guess";
                 label6.Text = "Your";
                 textBox1.Enabled = true;
                 Random rnd = new Random();
@@ -38,24 +38,24 @@ namespace WindowsFormsApps3
                 {
                     if (queen > N)
                     {
-                        label8.Text = "比" + queen.ToString() + "小";
+                        label8.Text = "Smaller than " + queen.ToString();
                         up = queen;
                         label5.Text = up.ToString();
                         i++;
                     }
                     if (queen < N)
                     {
-                        label8.Text = "比" + queen.ToString() + "大";
+                        label8.Text = "Larger than " + queen.ToString() ;
                         down = queen;
                         label1.Text = down.ToString();
                         i++;
                     }
                     if (queen == N)
                     {
-                        label8.Text = "咖妃猜中了!答案是 " + queen.ToString();
+                        label8.Text = "Concubine Ka guessed correctly! The answer is: " + queen.ToString();
                         textBox1.Text = "";
                         vs1 = "NO";
-                        button1.Text = "結束";
+                        button1.Text = "Finished";
                         over++;
 
                     }
@@ -64,15 +64,15 @@ namespace WindowsFormsApps3
             else
             {
 
-                label6.Text = "咖妃's";
-                button1.Text = "咖妃猜";
+                label6.Text = "Concubine Ka's";
+                button1.Text = "Concubine Ka guesses";
                 textBox1.Enabled = false;
                 try
                 {
                     x = int.Parse(textBox1.Text);
                     if (x < down | x > up)
                     {
-                        label8.Text = "你的猜測不在目前範圍內";
+                        label8.Text = "Your guess is not within the current range.";
                         textBox1.Text = "";
                         i++;
                     }
@@ -80,7 +80,7 @@ namespace WindowsFormsApps3
                     {
                         if (x > N)
                         {
-                            label8.Text = "比" + x.ToString() + "小";
+                            label8.Text = "Smaller than " + x.ToString();
                             up = x;
                             label5.Text = up.ToString();
                             textBox1.Text = "";
@@ -88,7 +88,7 @@ namespace WindowsFormsApps3
                         }
                         if (x < N)
                         {
-                            label8.Text = "比" + x.ToString() + "大";
+                            label8.Text = "Larger than" + x.ToString() ;
                             down = x;
                             label1.Text = down.ToString();
                             textBox1.Text = "";
@@ -96,10 +96,10 @@ namespace WindowsFormsApps3
                         }
                         if (x == N)
                         {
-                            label8.Text = "猜中了!答案是 " + x.ToString();
+                            label8.Text = "Correct! The answer is " + x.ToString();
                             textBox1.Text = "";
                             vs1 = "YES";
-                            button1.Text = "結束";
+                            button1.Text = "Finished";
                             over++;
 
                         }
@@ -110,8 +110,8 @@ namespace WindowsFormsApps3
                 catch(FormatException ex)
                 {
                     DialogResult False;
-                    False = MessageBox.Show("請輸入整數數字", "格式不正確", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    button1.Text = "猜測";
+                    False = MessageBox.Show("Please enter an integer.", "Incorrect format.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    button1.Text = "Guess";
                     label6.Text = "Your";
                     textBox1.Enabled = true;
                     textBox1.Text = "";

@@ -65,7 +65,7 @@ namespace WindowsFormsApps3
                 label3.Enabled = false; label3.Visible = false;
                 label4.Enabled = false; label4.Visible = false;
                 textBox1.Enabled = false; textBox1.Visible = false;
-                button1.Text = "答題結束，默默回自己的寢宮";
+                button1.Text = "End of the questioning. Quietly return to your own quarters.";
             }
             int nn;
             try
@@ -75,7 +75,7 @@ namespace WindowsFormsApps3
                 if (!(nn == ans))
                 {
                     DialogResult False;
-                    False = MessageBox.Show("你答錯了!皇上在看你", "答錯", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    False = MessageBox.Show("You answered incorrectly! The Emperor is watching you.", "Incorrect", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 textBox1.Text = "";
                 int[] rann2 = new int[8];
@@ -92,7 +92,7 @@ namespace WindowsFormsApps3
             catch(FormatException ex)
             {
                 DialogResult False;
-                False = MessageBox.Show("請輸入整數數字", "格式不正確", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                False = MessageBox.Show("Please enter an integer.", "Incorrect format.", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 textBox1.Text = "";
                 int[] rann2 = new int[8];
                 Random rnd1 = new Random();

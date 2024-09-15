@@ -16,10 +16,10 @@ namespace WindowsFormsApps3
         {
             InitializeComponent();
         }
-        string child = "滴血認親";
-        string toxic = "下毒";
-        string good = "抬舉";
-        string you = "拉攏";
+        string child = "Blood Bond Test";
+        string toxic = "Poisoning";
+        string good = "Praise";
+        string you = "Secure";
         string[] queen;
         int ini = 100;
         int Queen = 300;
@@ -37,7 +37,7 @@ namespace WindowsFormsApps3
             ini = ini + skill1;
             label3.Visible = true;
             
-            label3.Text = "你使用諂媚，血量加" + skill1;
+            label3.Text = "You used Flattery, increasing health by" + skill1;
             label2.Text = ini.ToString();
             start();
             button1.Enabled = false;
@@ -49,9 +49,9 @@ namespace WindowsFormsApps3
         private void button2_Click(object sender, EventArgs e)
         {
             skill4 = skill4 * 2;
-            button4.Text = "陷害(造成" + skill4 + "傷害)";
+            button4.Text = "Taunt (causing damage to be " + skill4 + ")";
             label3.Visible = true;
-            label3.Text = "你使用嘲諷，傷害變為"+skill4;
+            label3.Text = "You used Taunt, causing damage to be " + skill4;
             start();
             button1.Enabled = false;
             button2.Enabled = false;
@@ -63,7 +63,7 @@ namespace WindowsFormsApps3
         {
             Queen = Queen - skill4;
             label3.Visible = true;
-            label3.Text = "你使用陷害，皇后血量減少" + skill4;
+            label3.Text = "You used Frame, reducing the Empress's health by " + skill4;
             label9.Text = Queen.ToString();
             if(Queen<=0)
             {
@@ -94,9 +94,9 @@ namespace WindowsFormsApps3
         private void button3_Click(object sender, EventArgs e)
         {
             skill1 = skill1 + 20;
-            button1.Text = "諂媚(血量 + " + skill1 + ")";
+            button1.Text = "Play the Victim ( healing increasing by " + skill1 + ")";
             label3.Visible = true;
-            label3.Text = "你使用裝可憐，回血增加20";
+            label3.Text = "You used Play the Victim, increasing healing by 20.";
             start();
             button1.Enabled = false;
             button2.Enabled = false;
@@ -107,7 +107,7 @@ namespace WindowsFormsApps3
         private void button5_Click(object sender, EventArgs e)
         {
             label3.Visible = false;
-            label11.Text = "你的回合";
+            label11.Text = "Your turn";
             button1.Enabled = true;
             button2.Enabled = true;
             button3.Enabled = true;
@@ -124,7 +124,7 @@ namespace WindowsFormsApps3
             {
                 label3.Visible = false;
                 
-                label11.Text = "皇后的回合";
+                label11.Text = "Empress's turn";
             }
             if (counter1 == 4)
             {
@@ -133,29 +133,29 @@ namespace WindowsFormsApps3
                 label3.Visible = true;
                 if (i==3)
                 {
-                    label3.Text = "皇后對你使用"+ queen[i]+"，平安度過這一回合";
+                    label3.Text = "The Empress uses" + queen[i]+ "，You safely passed this round.";
                 }
                 else if (i == 2)
                 {
-                    label3.Text = "皇后對你使用" + queen[i] + "，皇后攻擊力加20";
+                    label3.Text = "The Empress uses" + queen[i] + ", increasing the Empress's attack power by 20.";
                     queenAttack = queenAttack + 20;
                 }
                 else if(i == 1)
                 {
-                    label3.Text = "皇后對你使用" + queen[i] + "，你受到" + queenAttack + "點傷害";
+                    label3.Text = "The Empress uses" + queen[i] + ", you get" + queenAttack + "dameges";
                     ini = ini - queenAttack;
                     label2.Text = ini.ToString();
                     if(ini<=0)
                     {
                         vs = "NO";
                         button6.Visible = true;
-                        button6.Text = "失敗...";
+                        button6.Text = "Fail...";
                         timer1.Enabled = false;
                     }
                 }
                 else if (i == 0)
                 {
-                    label3.Text = "皇后對你使用" + queen[i] + "，皇后血量回復50點";
+                    label3.Text = "The Empress uses" + queen[i] + ", restoring 50 health points to the Empress.";
                     Queen = Queen + 50;
                     label9.Text = Queen.ToString();
                 }

@@ -120,4 +120,7 @@
   <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Click on the white box, and the surrounding boxes (above, below, left, and right) will turn yellow. Conversely, clicking a yellow box will turn the surrounding boxes back to white. Turn all the boxes yellow to complete the level.</value>
+  </data>
 </root>
