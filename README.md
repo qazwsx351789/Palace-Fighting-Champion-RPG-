@@ -1,6 +1,7 @@
 Palace-Fighting-Champion-RPG
 
 Chinese version: main branch
+
 English version: master branch
 
 # game goals
@@ -12,15 +13,19 @@ This is a dialogue-based game, through doing the right choise in the dialogue wi
 In the end, we will settle your score and give you a title.
 
 To begin with, you have to enter your name in the figure below.
+
 <img width="436" alt="螢幕擷取畫面 2024-09-16 012442" src="https://github.com/user-attachments/assets/95c3b081-ddd3-44c2-b9d0-0eebd9c317e0">
 
 Game start! The favorility on the left top is your score, You can tap the dialog box to continue the can.
+
 <img width="431" alt="螢幕擷取畫面 2024-09-16 012540" src="https://github.com/user-attachments/assets/a6e2328c-993d-47cc-b23a-f9a1fa07e45f">
 
 As the plot progresses, it may display some options. Your choise will affect the score you get.
+
 <img width="430" alt="螢幕擷取畫面 2024-09-16 012607" src="https://github.com/user-attachments/assets/dbb53996-b43b-4483-8542-e4716a6a3b2a">
 
 There are several charactors will appear with plot progressing.
+
 <img width="431" alt="螢幕擷取畫面 2024-09-16 013756" src="https://github.com/user-attachments/assets/9f19c0c0-aeb0-40b6-82e6-02b67882fe29">
 
 
