@@ -1,4 +1,4 @@
-Palace-Fighting-Champion-RPG
+# Palace-Fighting-Champion-RPG
 
 Chinese version: main branch
 
