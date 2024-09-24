@@ -9,7 +9,7 @@ Through dialogue and challenges in the game, get your favorility as high as poss
 How high a status can you get? Or being relegated to the cold palace.
 
 # Introduction
-This is a dialogue-based game, through doing the right choise in the dialogue with charactors, You can acquire the favorility.\\
+This is a dialogue-based game, through doing the right choice in the dialogue with charactors, You can acquire the favorility
 In the end, we will settle your score and give you a title.
 
 To begin with, you have to enter your name in the figure below.
